@@ -1,3 +1,5 @@
+<img width="960" alt="Screenshot 2024-07-02 094954" src="https://github.com/mohammadirbah/landingpage-bootstrap-SASS/assets/96249704/4d371c4e-962b-4402-8cd1-7558b12b36ab">
+
 <p align="center">
   <a href="https://getbootstrap.com/">
     <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap logo" width="200" height="165">
@@ -244,12 +246,3 @@ Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com
 ## Copyright and license
 
 Code and documentation copyright 2011–2024 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors). Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
-# landing-page-sbbproject
-# landing-page-sbbproject
-# landing-page-sbbproject
-# landing-page-sbbproject
-# landing-page-sbbproject
-"# landingpage-bootstrap-SASS" 
-"# landingpage-bootstrap-SASS" 
-# landingpage-bootstrap-SASS
-"# landingpage-bootstrap-SASS" 
