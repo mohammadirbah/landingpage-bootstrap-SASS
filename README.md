@@ -1,15 +1,15 @@
 ![SBBPROJECT](https://github.com/mohammadirbah/landingpage-bootstrap-SASS/assets/96249704/1545cb81-045b-49d4-a57f-1eae437ac9a6)
-<br />
+
 <img width="960" alt="Screenshot 2024-07-02 094954" src="https://github.com/mohammadirbah/landingpage-bootstrap-SASS/assets/96249704/4d371c4e-962b-4402-8cd1-7558b12b36ab">
-<br />
+
 <img width="960" alt="Screenshot 2024-07-02 095424" src="https://github.com/mohammadirbah/landingpage-bootstrap-SASS/assets/96249704/67868b97-4ef7-470c-8223-1fdee0b4a7cb">
-<br />
+
 <img width="960" alt="Screenshot 2024-07-02 095504" src="https://github.com/mohammadirbah/landingpage-bootstrap-SASS/assets/96249704/2bffba66-f572-4f86-9549-cb6698a429d2">
-<br />
+
 <img width="960" alt="Screenshot 2024-07-02 095646" src="https://github.com/mohammadirbah/landingpage-bootstrap-SASS/assets/96249704/72f333a3-002b-47fd-8dad-a5fbec93b591">
-<br />
+
 <img width="960" alt="footer-sbbproject" src="https://github.com/mohammadirbah/landingpage-bootstrap-SASS/assets/96249704/56ae3cda-6aba-43d4-86e9-f88247e63bb3">
-<br />
+
 
 <p align="center">
   <a href="https://getbootstrap.com/">
