@@ -1,0 +1,19 @@
+body {
+  /* background */
+  background-color: #494949;
+  /* background-image: url("/assets/background-carbon2.jpg"); */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  
+  /* font */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  /* image wrapper */
+  .image-wrapper {
+    height: 47.5vw;
+  }
+  
+ }
+
+/*# sourceMappingURL=custom-style.css.map */

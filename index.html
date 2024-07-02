@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SBBPROJECT</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/dist/css/bootstrap.css">
+
+  <!-- animasi -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- link scss -->
+  <link rel="stylesheet" href="./dist/css/custom-style.css ">
+
+  <style>
+    .card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-img-top {
+      transition: transform 0.3s;
+    }
+
+    .card-img-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 56px);
+
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .card:hover .card-img-overlay {
+      opacity: 0.5;
+    }
+
+    .card:hover .card-img-top {
+      transform: scale(1.1);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+
+      <span>
+        <a href="#home"><img class="img-fluid" width="200" height="40" src="/assets/logo sbb.png"
+            alt="Logo SbbProject"></a>
+      </span>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#product">Our Product</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#faq">FAQ</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#address">Address</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <section id="home">
+    <div data-aos="fade-up">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active image-wrapper">
+            <img src="/assets/carousel-1.png" class="d-block w-100" alt="carousel-1">
+            <div class="overlay"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));">
+            </div>
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item image-wrapper">
+            <img src="/assets/carousel-5.jpg" class="d-block w-100" alt="carousel-5">
+            <div class="overlay"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-4 fw-bold lh-1 text-body-white">Toko Variasi Motor Terpercaya!</h1>
+              <h3 class="lead">Apakah Anda seorang penggemar motor yang selalu ingin tampil beda?<br>
+                Ingin motor kesayangan Anda tampil lebih keren dan sporty?<br>
+                SBBPROJECT hadir untuk memenuhi semua kebutuhan variasi motor Anda!</h3>
+            </div>
+          </div>
+
+          <div class="carousel-item image-wrapper" data-bs-interval="10000">
+            <img src="/assets/carousel-9.jpeg" class="d-block w-100" alt="carousel-4">
+            <div class="overlay"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-4 fw-bold lh-1 text-body-white">Kenapa Harus Pilih Toko Kami?</h1>
+              <h3 class="lead">
+                <ul>
+                  <li>Kualitas Terjamin - Kami hanya menyediakan produk variasi motor berkualitas tinggi dan original.</li>
+                  <li>Harga Terjangkau - Dapatkan produk terbaik dengan harga yang bersahabat.</li>
+                  <li>Koleksi Lengkap - Dari stiker, knalpot, lampu, hingga aksesori lainnya, semua ada di sini!</li>
+                </ul>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="vh-100 d-flex align-items-center">
+    <div class="container-fluid h-100" data-aos="fade-up">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 p-0" style="position: relative; border-radius: 0.5rem; overflow: hidden; height: 100vh;">
+          <img src="/assets/about-1.jpg" alt="SBBPROJECT"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+          <div class="overlay"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));">
+          </div>
+          <div class="container h-100 p-5 text-white" style="position: absolute; z-index: 1;">
+            <h1 class="display-4 fw-bold lh-1" data-aos="fade-left">About Us</h1><br><br><br><br>
+            <p class="lead" data-aos="fade-up"><strong>SBBPROJECT adalah produsen part variasi motor yang khususnya
+                berbahan dasar akrilik seperti:<br> cover radiator, cover panel, mudflap, cover spion, frame plat nomor
+                dan lain-lain. Store kami juga menjual berbagai macam variasi motor lain dengan berbagai jenis dan merk.
+                Kami juga melayani pemasangan part-part variasi. Silahkan datang ke offline store kami dengan cara klik
+                <a href="#address">disini</a>.</strong></p><br>
+            <h2 class="text-center" data-aos="fade-up">HAPPY SHOPPING!</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- card  -->
+  <section class="container" id="product">
+    <div>
+      <h2 class="container text-center text-white pt-lg-5" data-aos="fade-left"><strong>OUR PRODUCT</strong></h2><br>
+      <div id="carouselExampleIndicators" class="carousel slide" data-aos="fade-up">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col">
+                <div class="card container text-white bg-dark" style="width: 18rem;">
+                  <img src="/assets/card-1.jpeg" class="card-img-top mx-auto p-2" alt="...">
+                  <div class="card-img-overlay"></div>
+                  <div class="card-body">
+                    <h6 class="card-title text-center">Akrilik Downdraft/Akrilik Bagasi</h6>
+                    <a href="https://shopee.co.id/Akrilik-downdraft-akrilik-bagasi-downdraft-nmax-old-aerox-old-aerox-new-new-vario-Vario-led-old-nmax-new-i.54772305.10542002924?publish_id=&sp_atk=98690c10-b565-43b2-b45d-f6ce7d039d0a&xptdk=98690c10-b565-43b2-b45d-f6ce7d039d0a"
+                      class="btn btn-primary container">BUY!</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card container text-white bg-dark" style="width: 18rem;">
+                  <img src="/assets/card-2.jpeg" class="card-img-top mx-auto p-2" alt="...">
+                  <div class="card-img-overlay"></div>
+                  <div class="card-body">
+                    <h6 class="card-title text-center">Visor</h6>
+                    <a href="https://shopee.co.id/Visor-Aerox-NVX-Murah-i.54772305.5885363704?sp_atk=618ec795-e73a-478c-8753-27c3d788a9d7&xptdk=618ec795-e73a-478c-8753-27c3d788a9d7"
+                      class="btn btn-primary container">BUY!</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card container text-white bg-dark" style="width: 18rem;">
+                  <img src="/assets/card-3.jpeg" class="card-img-top mx-auto p-2" alt="...">
+                  <div class="card-img-overlay"></div>
+                  <div class="card-body">
+                    <h6 class="card-title text-center">Frame & Plat Nomor Custom</h6>
+                    <a href="https://shopee.co.id/COVER-FRAME-PLAT-PLAT-NOMOR-CUSTOM-SUKA-SUKA-ANDA-SUDAH-INCLUDE-LOGO-SAMSAT-i.54772305.29200438502?sp_atk=f158d5f4-79bb-4b74-817d-4d1baf22015d&xptdk=f158d5f4-79bb-4b74-817d-4d1baf22015d"
+                      class="btn btn-primary container">BUY!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col">
+                <div class="card container text-white bg-dark" style="width: 18rem;">
+                  <img src="/assets/card-4.jpeg" class="card-img-top mx-auto p-2" alt="...">
+                  <div class="card-img-overlay"></div>
+                  <div class="card-body">
+                    <h6 class="card-title text-center">Cover CVT</h6>
+                    <a href="https://shopee.co.id/Cover-tutup-cvt-aerox-old-nmax-old-aerox-new-nmax-new-i.54772305.8337687755?sp_atk=6f14f5e4-a151-4b8e-8fa7-cef59c5a357b&xptdk=6f14f5e4-a151-4b8e-8fa7-cef59c5a357b"
+                      class="btn btn-primary container">BUY!</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card container text-white bg-dark" style="width: 18rem;">
+                  <img src="/assets/card-5.jpeg" class="card-img-top mx-auto p-2" alt="...">
+                  <div class="card-img-overlay"></div>
+                  <div class="card-body">
+                    <h6 class="card-title text-center">Mudflap</h6>
+                    <a href="https://shopee.co.id/Mudflap-Akrilik-Aerox-Nmax-OLD-Bendingan-tekuk-tidak-lurus-i.54772305.3186017234?xptdk=87b6cfd6-d63a-479c-9efd-5fa5a85fe9e8"
+                      class="btn btn-primary container">BUY!</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card container text-white bg-dark" style="width: 18rem;">
+                  <img src="/assets/card-6.jpeg" class="card-img-top mx-auto p-2" alt="...">
+                  <div class="card-img-overlay"></div>
+                  <div class="card-body">
+                    <h6 class="card-title text-center">Akrilik Downdraft/Akrilik Bagasi</h6>
+                    <a href="https://shopee.co.id/Tutup-Aki-Akrilik-Aerox-NEW-Old-bisa-Custom-nama-i.54772305.11786720957?xptdk=e778ca41-c175-48af-91b6-31fd7d273908"
+                      class="btn btn-primary container">BUY!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col">
+                <div class="card container text-white bg-dark" style="width: 18rem;">
+                  <img src="/assets/card-7.jpeg" class="card-img-top mx-auto p-2" alt="...">
+                  <div class="card-img-overlay"></div>
+                  <div class="card-body">
+                    <h6 class="card-title text-center">Cover Aki</h6>
+                    <a href="https://shopee.co.id/COVER-KEONGAN-AKRILIK-VESPA-MATIC-SPRINT-i.54772305.24907324942?xptdk=d1cd4a3a-cde0-468c-b0eb-17e4936e0f9a"
+                      class="btn btn-primary container">BUY!</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card container text-white bg-dark" style="width: 18rem;">
+                  <img src="/assets/card-8.jpeg" class="card-img-top mx-auto p-2" alt="...">
+                  <div class="card-img-overlay"></div>
+                  <div class="card-body">
+                    <h6 class="card-title text-center">Emblem</h6>
+                    <a href="https://shopee.co.id/EMBLEM-AEROX-KANJI-TIMBUL-AKRILIK-STIKER-HOLOGRAM-i.54772305.17393304726?publish_id=&sp_atk=a6af2ac0-2694-4471-b295-59512cef4481&xptdk=a6af2ac0-2694-4471-b295-59512cef4481"
+                      class="btn btn-primary container">BUY!</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card container text-white bg-dark" style="width: 18rem;">
+                  <img src="/assets/card-9.jpeg" class="card-img-top mx-auto p-2" alt="...">
+                  <div class="card-img-overlay"></div>
+                  <div class="card-body">
+                    <h6 class="card-title text-center">Cover Bagasi</h6>
+                    <a href="https://shopee.co.id/COVER-AKRILIK-BAGASI-MIO-SPORTY-MIO-SMILE-TEBAL-5MM-3MM-i.54772305.24580081909?sp_atk=dda1cedd-d4f7-4274-bd8a-eb95104268fd&xptdk=dda1cedd-d4f7-4274-bd8a-eb95104268fd"
+                      class="btn btn-primary container">BUY!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </section>
+
+  <!-- Accordion -->
+  <section id="faq">
+    <div>
+      <h2 class="text-center text-white pt-lg-5" data-aos="fade-left"><strong>FAQ</strong></h2><br>
+      <div class="accordion " id="accordionPanelsStayOpenExample" data-aos="fade-up">
+        <div class="accordion-item container bg-dark">
+          <div class="container">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                <strong class="text-white">Bagaimana Cara Untuk Order?</strong>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body text-white">
+                <br>Anda dapat memesan melalui online store kami di shopee maupun tokopedia, atau anda juga dapat
+                mendatangi offline store kami dengan cara klik <a href="#address">disini</a>.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item container bg-dark">
+          <div class="container">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo">
+                <strong class="text-white">Apakah SBBPROJECT Melayani Pemasangan Part-Part Variasi Motor?</strong>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body text-white">
+                <br>Dengan mendatangi offline store kami anda dapat melakukan pemasangan part variasi secara gratis.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- Maps -->
+  <section class="container" id="address">
+    <h2 class="text-center text-white pt-lg-5" data-aos="fade-left"><strong>FIND US</strong></h2><br>
+    <div class="card bg-dark p-4" data-aos="fade-up">
+      <div class="row g-4">
+
+        <div class="col-md-6">
+
+          <div class="mb-4">
+            <div class="card-body" data-aos="fade-up">
+              <h5 class="card-title text-center text-white"><strong>Address</strong></h5>
+              <h5 class="card-text text-center text-white">Karangrejo, Kec. Gajahmungkur, Kota Semarang, Jawa Tengah
+                50231</h5>
+            </div>
+          </div>
+          <!-- Form -->
+          <div data-aos="fade-up">
+            <form class="p-2">
+              <div class="container">
+                <h5 class="text-center text-white"><strong>Contact Us</strong></h5>
+                <label for="exampleInputEmail1" class="form-label text-white">Nama</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="container">
+                <label for="exampleInputPassword1" class="form-label text-white">Email</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="container">
+                <label for="exampleInputPassword1" class="form-label text-white">Pesan</label>
+                <textarea name="pesan" id="pesan" class="form-control"></textarea>
+              </div>
+              <br>
+              <div class="container">
+                <button class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-6" data-aos="fade-up">
+          <h5 class="card-title text-center text-white"><strong>Google Maps</strong></h5>
+          <iframe class="rounded-3"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15839.250608350716!2d110.4146207!3d-7.0312943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708ba41dc8b8e3%3A0x20ad8a5aa0f2d106!2sSBBPROJECT!5e0!3m2!1sid!2sid!4v1717493365382!5m2!1sid!2sid"
+            width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        </a>
+        <span>
+          <a href="#home"><img class="img-fluid" width="200" height="40" src="/assets/logo sbb.png"
+              alt="Logo SbbProject"></a>
+        </span>
+        <span class="mb-3 mb-md-0 text-white">&copy; 2024 Company, Inc</span>
+      </div>
+
+      <ul class="nav col-md-5 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="btn btn-link btn-floating btn-lg text-white m-1" href="http://wa.me/6285727257010"
+            role="button"><i class="bi bi-whatsapp"></i></a></li>
+        <li class="ms-3"><a class="btn btn-link btn-floating btn-lg text-white m-1"
+            href="https://www.instagram.com/sbbproject_" role="button"><i class="fa fa-instagram"></i></a></li>
+        <li class="ms-3"><a class="btn btn-link btn-floating btn-lg text-white m-1"
+            href="https://www.tiktok.com/@sbbproject" role="button"><i class="bi bi-tiktok"></i></a></li>
+        <li class="ms-3"><a class="btn btn-link btn-floating btn-lg text-white m-1"
+            href="https://shopee.co.id/sbbproject?categoryId=100641&entryPoint=ShopByPDP&itemId=24580081909"
+            role="button"><img src="/assets/shopee-icon.png" alt="icon shopee" width="20" height="20"></i></a></li>
+        <li class="ms-3"><a class="btn btn-link btn-floating btn-lg text-white m-1"
+            href="https://www.tokopedia.com/sbbproject" role="button"><img src="assets/tokopedia-icon.png"
+              alt="icon tokopedia" width="25" height="25"></a></li>
+      </ul>
+    </footer>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="/dist/js/bootstrap.min.js"></script>
+
+  <!-- animasi -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
