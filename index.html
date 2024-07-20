@@ -35,7 +35,6 @@
       left: 0;
       width: 100%;
       height: calc(100% - 56px);
-
       background: rgba(0, 0, 0, 0.5);
       color: white;
       display: flex;
@@ -52,55 +51,83 @@
     .card:hover .card-img-top {
       transform: scale(1.1);
     }
-  </style>
 
+    /* Ensure the navbar takes the full width */
+    .navbar {
+      width: 100%;
+    }
+
+    /* Adjust carousel and about sections */
+    .carousel-inner,
+    .carousel-item,
+    .carousel img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Remove right gap on mobile */
+    body {
+      overflow-x: hidden;
+    }
+
+    #about img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
+  <section>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
 
-      <span>
-        <a href="#home"><img class="img-fluid" width="200" height="40" src="/assets/logo sbb.png"
-            alt="Logo SbbProject"></a>
-      </span>
+        <span>
+          <a href="#home"><img class="img-fluid" width="200" height="40" src="/assets/logo sbb.png"
+              alt="Logo SbbProject"></a>
+        </span>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#about">About Us</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link active text-center" href="#home">Home</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#product">Our Product</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link active text-center" href="#about">About Us</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#faq">FAQ</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link active text-center" href="#product">Our Product</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#address">Address</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link active text-center" href="#faq">FAQ</a>
+            </li>
 
-        </ul>
-        <form class="d-flex" role="search">
+            <li class="nav-item">
+              <a class="nav-link active text-center" href="#address">Address</a>
+            </li>
+
+          </ul>
+          <!-- <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        </form> -->
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </section>
 
   <!-- Carousel -->
-  <section id="home">
+  <section id="home" class="vh-100 d-flex align-items-center">
     <div data-aos="fade-up">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -141,7 +168,8 @@
               <h1 class="display-4 fw-bold lh-1 text-body-white">Kenapa Harus Pilih Toko Kami?</h1>
               <h3 class="lead">
                 <ul>
-                  <li>Kualitas Terjamin - Kami hanya menyediakan produk variasi motor berkualitas tinggi dan original.</li>
+                  <li>Kualitas Terjamin - Kami hanya menyediakan produk variasi motor berkualitas tinggi dan original.
+                  </li>
                   <li>Harga Terjangkau - Dapatkan produk terbaik dengan harga yang bersahabat.</li>
                   <li>Koleksi Lengkap - Dari stiker, knalpot, lampu, hingga aksesori lainnya, semua ada di sini!</li>
                 </ul>
@@ -164,9 +192,9 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="vh-100 d-flex align-items-center">
-    <div class="container-fluid h-100" data-aos="fade-up">
-      <div class="row h-100 align-items-center">
+  <section id="about" class="container vh-100 d-flex align-items-center">
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row align-items-center">
         <div class="col-12 p-0" style="position: relative; border-radius: 0.5rem; overflow: hidden; height: 100vh;">
           <img src="/assets/about-1.jpg" alt="SBBPROJECT"
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
@@ -174,7 +202,7 @@
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));">
           </div>
           <div class="container h-100 p-5 text-white" style="position: absolute; z-index: 1;">
-            <h1 class="display-4 fw-bold lh-1" data-aos="fade-left">About Us</h1><br><br><br><br>
+            <h1 class="display-4 fw-bold lh-1" data-aos="fade-left">ABOUT US</h1><br><br><br><br>
             <p class="lead" data-aos="fade-up"><strong>SBBPROJECT adalah produsen part variasi motor yang khususnya
                 berbahan dasar akrilik seperti:<br> cover radiator, cover panel, mudflap, cover spion, frame plat nomor
                 dan lain-lain. Store kami juga menjual berbagai macam variasi motor lain dengan berbagai jenis dan merk.
@@ -187,15 +215,15 @@
     </div>
   </section>
 
-  <!-- card  -->
-  <section class="container" id="product">
+  <!-- card -->
+  <section id="product" class="container py-5">
     <div>
-      <h2 class="container text-center text-white pt-lg-5" data-aos="fade-left"><strong>OUR PRODUCT</strong></h2><br>
+      <h1 class="container text-center text-white pt-lg-5" data-aos="fade-left"><strong>OUR PRODUCT</strong></h1><br>
       <div id="carouselExampleIndicators" class="carousel slide" data-aos="fade-up">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
-              <div class="col">
+              <div class="col-lg-4 mb-4">
                 <div class="card container text-white bg-dark" style="width: 18rem;">
                   <img src="/assets/card-1.jpeg" class="card-img-top mx-auto p-2" alt="...">
                   <div class="card-img-overlay"></div>
@@ -206,7 +234,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col-lg-4 mb-4">
                 <div class="card container text-white bg-dark" style="width: 18rem;">
                   <img src="/assets/card-2.jpeg" class="card-img-top mx-auto p-2" alt="...">
                   <div class="card-img-overlay"></div>
@@ -217,7 +245,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col-lg-4 mb-4">
                 <div class="card container text-white bg-dark" style="width: 18rem;">
                   <img src="/assets/card-3.jpeg" class="card-img-top mx-auto p-2" alt="...">
                   <div class="card-img-overlay"></div>
@@ -232,7 +260,7 @@
           </div>
           <div class="carousel-item">
             <div class="row">
-              <div class="col">
+              <div class="col-lg-4 mb-4">
                 <div class="card container text-white bg-dark" style="width: 18rem;">
                   <img src="/assets/card-4.jpeg" class="card-img-top mx-auto p-2" alt="...">
                   <div class="card-img-overlay"></div>
@@ -243,7 +271,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col-lg-4 mb-4">
                 <div class="card container text-white bg-dark" style="width: 18rem;">
                   <img src="/assets/card-5.jpeg" class="card-img-top mx-auto p-2" alt="...">
                   <div class="card-img-overlay"></div>
@@ -254,7 +282,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col-lg-4 mb-4">
                 <div class="card container text-white bg-dark" style="width: 18rem;">
                   <img src="/assets/card-6.jpeg" class="card-img-top mx-auto p-2" alt="...">
                   <div class="card-img-overlay"></div>
@@ -269,7 +297,7 @@
           </div>
           <div class="carousel-item">
             <div class="row">
-              <div class="col">
+              <div class="col-lg-4 mb-4">
                 <div class="card container text-white bg-dark" style="width: 18rem;">
                   <img src="/assets/card-7.jpeg" class="card-img-top mx-auto p-2" alt="...">
                   <div class="card-img-overlay"></div>
@@ -280,7 +308,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col-lg-4 mb-4">
                 <div class="card container text-white bg-dark" style="width: 18rem;">
                   <img src="/assets/card-8.jpeg" class="card-img-top mx-auto p-2" alt="...">
                   <div class="card-img-overlay"></div>
@@ -291,7 +319,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col-lg-4 mb-4">
                 <div class="card container text-white bg-dark" style="width: 18rem;">
                   <img src="/assets/card-9.jpeg" class="card-img-top mx-auto p-2" alt="...">
                   <div class="card-img-overlay"></div>
@@ -381,19 +409,19 @@
             <form class="p-2">
               <div class="container">
                 <h5 class="text-center text-white"><strong>Contact Us</strong></h5>
-                <label for="exampleInputEmail1" class="form-label text-white">Nama</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleName1" class="form-label text-white">Nama</label>
+                <input type="name" class="form-control" id="exampleName1" aria-describedby="nameHelp">
               </div>
               <div class="container">
-                <label for="exampleInputPassword1" class="form-label text-white">Email</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label for="exampleEmail1" class="form-label text-white">Email</label>
+                <input type="email" class="form-control" id="exampleEmail1">
               </div>
               <div class="container">
-                <label for="exampleInputPassword1" class="form-label text-white">Pesan</label>
-                <textarea name="pesan" id="pesan" class="form-control"></textarea>
+                <label for="examplePesan1" class="form-label text-white">Pesan</label>
+                <textarea name="textarea" id="pesan" class="form-control"></textarea>
               </div>
               <br>
-              <div class="container">
+              <div class="container-fluid">
                 <button class="btn btn-primary">Submit</button>
               </div>
             </form>
@@ -414,14 +442,9 @@
   <!-- Footer -->
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-        </a>
-        <span>
-          <a href="#home"><img class="img-fluid" width="200" height="40" src="/assets/logo sbb.png"
-              alt="Logo SbbProject"></a>
-        </span>
-        <span class="mb-3 mb-md-0 text-white">&copy; 2024 Company, Inc</span>
+      <div>
+        <a href="#home" class="text-white text-decoration-none">SBB Project </a>
+        <span class="mb-3 mb-md-0 text-white"> &copy; 2024 Company, Inc</span>
       </div>
 
       <ul class="nav col-md-5 justify-content-end list-unstyled d-flex">
